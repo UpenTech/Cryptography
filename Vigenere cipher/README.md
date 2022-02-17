@@ -11,7 +11,7 @@ Now, we assign the Key to our plaintext.
 
 |C|O|D|E|R|C|O|D|E|R|C|O|
 
-|H | e | l | l | o | | G | i | t | h | u | b |  
+| H | e | l | l | o | | G | i | t | h | u | b |  
 
 
 
