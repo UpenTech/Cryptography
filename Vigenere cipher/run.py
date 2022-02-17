@@ -1,10 +1,10 @@
-#import pyperclip as PC
-#import argparse
+import pyperclip as PC
+import argparse
 
-
-#parser = argparse.ArgumentParser()
-
-# args = parser.parse_args()
+parser = argparse.ArgumentParser()
+parser.add_argument("-e",  "--encrypt", help="Encrypts the argument with Vigenere's Cipher")
+parser.add_argument("-d",  "--decrypt", help="Decrypts the cipher text passed as argument")
+args = parser.parse_args()
 
 alpha_list = []
 CIPHER_KEY = "WHITE"
@@ -74,10 +74,20 @@ def decrypt(text):
     print(de_text)
 
 
-alpha(alpha_list)
-in_text = input("> ")
 
-data = encrypt(in_text)
-print(data)
-decrypt(data)
+
+alpha(alpha_list)
+
+if args.encrypt:
+    in_text = args.encrypt
+    # print(encrypt(in_text))
+    PC.copy(encrypt(in_text))
+elif args.decrypt:
+    decrypt(args.decrypt)
+else:
+    in_text = input(">")
+    print(encrypt(in_text))
+
+
+
 
