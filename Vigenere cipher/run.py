@@ -2,6 +2,7 @@ import pyperclip as PC
 import argparse
 
 parser = argparse.ArgumentParser()
+#Optional Flags for application
 parser.add_argument("-e",  "--encrypt", help="Encrypts the argument with Vigenere's Cipher")
 parser.add_argument("-d",  "--decrypt", help="Decrypts the cipher text passed as argument")
 args = parser.parse_args()
@@ -78,13 +79,13 @@ def decrypt(text):
 
 alpha(alpha_list)
 
-if args.encrypt:
+if args.encrypt:                    #Encrypt argument == True
     in_text = args.encrypt
     # print(encrypt(in_text))
     PC.copy(encrypt(in_text))
-elif args.decrypt:
+elif args.decrypt:                  #Decrypt argument == True
     decrypt(args.decrypt)
-else:
+else:                               #Argument == False
     in_text = input(">")
     print(encrypt(in_text))
 
