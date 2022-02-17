@@ -9,9 +9,9 @@ Say, the cipher key we're using be `CODER` - it's just an example you're free to
 We have a plaintext of `Hello Github, add a README file to a project.`
 Now, we assign the Key to our plaintext.
 
-C|O|D|E|R|C|O|D|E|R|C|O
+|C|O|D|E|R|C|O|D|E|R|C|O|
 
-H|e|l|l|o| |G|i|t|h|u|b  
+|H|e|l|l|o| |G|i|t|h|u|b|  
 
 
 
